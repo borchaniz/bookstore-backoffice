@@ -1,10 +1,12 @@
 import {NgModule} from '@angular/core';
 import {RouterModule, Routes} from '@angular/router';
 import {DashboardComponent} from './dashboard/dashboard.component';
+import {AuthorsComponent} from './authors/authors.component';
+import {GenresComponent} from './genres/genres.component';
+import {BooksComponent} from './books/books.component';
+import {AddBookComponent} from './add-book/add-book.component';
 import {LoginComponent} from './login/login.component';
 import {LayoutComponent} from './layout/layout.component';
-import {ListRoomsComponent} from './list-rooms/list-rooms.component';
-import {AddClassroomComponent} from './add-classroom/add-classroom.component';
 
 
 export const AppRoutes: Routes = [
@@ -17,11 +19,20 @@ export const AppRoutes: Routes = [
         component: DashboardComponent
       },
       {
-        path: 'add-classroom',
-        component: AddClassroomComponent
-      },{
-      path:'list-rooms',
-        component: ListRoomsComponent
+        path: 'authors',
+        component: AuthorsComponent
+      },
+      {
+        path: 'genres',
+        component: GenresComponent
+      },
+      {
+        path: 'books',
+        component: BooksComponent
+      },
+      {
+        path: 'add-book',
+        component: AddBookComponent
       }
     ]
   }, {

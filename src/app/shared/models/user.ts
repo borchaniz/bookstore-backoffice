@@ -1,3 +1,4 @@
+import {CartElement} from './cart-element';
 
 export class User {
   id: number;
@@ -7,7 +8,8 @@ export class User {
   name = '';
   familyName = '';
   phone: number;
-
+  cart:CartElement[] = [];
+  totalCart:number;
 
   isValid() {
     return (this.name !== ''
